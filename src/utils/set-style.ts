@@ -22,7 +22,7 @@ export const setStyle = <TElement extends HTMLElement = HTMLElement>(
     // @ts-expect-error guarnateed to be a valid CSS property key
     prevValues[key] = element.style.getPropertyValue(key);
     // @ts-expect-error guarnateed to be a valid CSS property key
-    element.style.setProperty(key, styles[key] || null);
+    element.style[key] = styles[key] || "";
   }
 
   return {
