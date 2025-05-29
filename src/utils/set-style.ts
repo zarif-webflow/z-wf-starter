@@ -1,3 +1,5 @@
+import type { Properties as CSSProperties } from "csstype";
+
 /**
  * Sets the styles on an HTML element and returns a function to revert them.
  *
@@ -12,12 +14,14 @@
  **/
 export const setStyle = <TElement extends HTMLElement = HTMLElement>(
   element: TElement,
-  styles: Record<string, string>
+  styles: CSSProperties
 ): { revert: () => void } => {
   const prevValues: typeof styles = {};
 
   for (const key of Object.keys(styles)) {
+    // @ts-expect-error guarnateed to be a valid CSS property key
     prevValues[key] = element.style.getPropertyValue(key);
+    // @ts-expect-error guarnateed to be a valid CSS property key
     element.style.setProperty(key, styles[key] || null);
   }
 
