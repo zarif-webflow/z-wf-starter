@@ -55,7 +55,7 @@ export const getHtmlElement = <TElement extends HTMLElement = HTMLElement>({
     consoleMethod(
       `${log.toUpperCase()}: Element with selector "${selector}" not found in ${
         parent !== undefined ? "the specified parent element:" : "the document."
-      }.`,
+      }`,
       parent
     );
     return null;
@@ -109,7 +109,7 @@ export const getMultipleHtmlElements = <TElement extends HTMLElement = HTMLEleme
     consoleMethod(
       `${log.toUpperCase()}: No elements found with selector "${selector}" in ${
         parent !== undefined ? "the specified parent element:" : "the document."
-      }.`,
+      }`,
       parent
     );
     return null;
