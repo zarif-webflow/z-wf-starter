@@ -1,0 +1,8 @@
+# Run build
+echo "🔨  Running pnpm build…"
+pnpm build || {
+  echo "❌  Build failed. Commit aborted."
+  exit 1
+}
+
+echo "✅  Build succeeded, proceeding with commit."
