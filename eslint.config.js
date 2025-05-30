@@ -9,7 +9,7 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   {
     name: "files-ignoring",
-    ignores: ["**/dist/**"],
+    ignores: ["**/dist/**", "bin/live-reload.js"],
   },
   {
     name: "imports-sorting",
