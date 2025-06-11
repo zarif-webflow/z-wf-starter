@@ -1,2 +1,3 @@
-window.Webflow ||= [];
-window.Webflow.push(() => {});
+import { afterWebflowReady } from "@taj-wf/utils";
+
+afterWebflowReady(() => {});
