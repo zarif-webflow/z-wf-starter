@@ -12,8 +12,8 @@ importers:
         specifier: ^0.40.0
         version: 0.40.0
       '@taj-wf/utils':
-        specifier: ^1.1.3
-        version: 1.1.3
+        specifier: ^1.1.4
+        version: 1.1.4
     devDependencies:
       '@eslint/js':
         specifier: ^9.19.0
@@ -497,8 +497,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@taj-wf/utils@1.1.3':
-    resolution: {integrity: sha512-sy5vtnUw4QO0D+CDf44o5pbSMGJ421sAPCiGfqLos2MTWtP2U6qtQP0/bMCMJFM9/yQ89UnO/w+GPKUJXCoIVw==}
+  '@taj-wf/utils@1.1.4':
+    resolution: {integrity: sha512-x4AJds48U/VXYqaafps+7VQaFM8knYZwIZyzhQVnTiXsfd7gXmc5mFy+5k+LT2+mv+qys9ecjn7wlHFyVD81ZA==}
     engines: {pnpm: '>=10'}
 
   '@tootallnate/quickjs-emscripten@0.23.0':
@@ -1862,7 +1862,7 @@ snapshots:
     dependencies:
       playwright: 1.50.1
 
-  '@taj-wf/utils@1.1.3':
+  '@taj-wf/utils@1.1.4':
     dependencies:
       '@finsweet/ts-utils': 0.40.0
       gsap: 3.13.0
